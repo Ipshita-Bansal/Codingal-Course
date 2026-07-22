@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M1 L6 Doctor's Appointment Form</title>
+  </head>
+  <body>
+    <h1>🏥 Fortis Hospital Doctor's Appointment</h1>
+    <p>Fill in the form below to book an appointment</p>
+    <form>
+      <fieldset>
+        <legend><h3>Personal Information</h3></legend>
+        <label for="name">Patient's Name</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter patient's name"
+        /><br /><br />
+        <label for="medical-id">Private Medical ID</label><br />
+        <input
+          type="password"
+          id="medical-id"
+          name="medical-id"
+          placeholder="Enter secret ID"
+          required
+        /><br /><br />
+         <label for="medical-id">Private Email ID</label><br />
+        <input type="email" id="email" name="email"><br><br>
+        <label for="dob">Date of Birth</label><br />
+        <input type="date" id="dob" name="dob" /><br /><br/>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend><h3>Visit Deatils</h3></legend>
+        <label for="doctor">Choose your Doctor</label>
+        <Select id="doctor" name="doctor">
+            <option value="">Select one:</option>
+            <option value="lee">Dr. Lee - General</option>
+            <option value="sharma">Dr. Sharma - Dentist</option>
+            <option value="khan">Dr. Khan - Child Specialist</option>
+        </Select>
+        <br><br>
+        <label>Reason for visit</label>
+        <br>
+<label>
+        <input type="radio" name="reason" value="cold">Cold
+</label>
+<label>
+        <input type="radio" name="reason" value="flu">Flu
+</label>
+<label>
+        <input type="radio" name="reason" value="fever">Fever
+</label>
+<label>
+        <input type="radio" name="reason" value="other">Other
+        </label>
+        <br><br>
+        <label for="notes">Any notes for the doctor?</label><br>
+        <textarea name="notes" id="notes" rows="5" cols="60"></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Preferred day of visit</legend>
+        <label>
+        <input type="checkbox" name="day" value="mon">Monday
+</label>
+<label>
+        <input type="checkbox" name="day" value="tue">Tuesday
+</label>
+<label>
+        <input type="checkbox" name="day" value="sat">Saturday
+</label>
+<label>
+        <input type="checkbox" name="day" value="sun">Sunday
+        </label>
+      </fieldset>
+      <br>
+      <input type="submit" value="Book your appointment">
+    </form>
+  </body>
+</html>
