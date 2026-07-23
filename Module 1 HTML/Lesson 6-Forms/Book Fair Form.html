@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>📖 Scholastic Book Fair Registration</h1>
+    <h4><q>Dive into the world of fantasy and stories</q></h4>
+    <p>Fill in the form below to <mark><b>register</b></mark> and <i>reserve your books</i></p>
+    <form>
+      <fieldset>
+        <legend><h3>Personal Information</h3></legend>
+        <label for="name">Attendee's Name</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter attendee's name"
+        /><br /><br />
+        
+        <label for="library-id">Student Library ID</label><br />
+        <input
+          type="password"
+          id="library-id"
+          name="library-id"
+          placeholder="Enter secret ID"
+          required
+        /><br /><br />
+        
+        <label for="email">Private Email ID</label><br />
+        <input type="email" id="email" name="email"><br><br>
+        
+        <label for="dob">Date of Birth</label><br />
+        <input type="date" id="dob" name="dob" /><br /><br/>
+      </fieldset>
+      
+      <br>
+      
+      <fieldset>
+        <legend><h3>Book Fair Details</h3></legend>
+        <label for="genre">Choose your Favorite Genre</label>
+        <select id="genre" name="genre">
+            <option value="">Select one:</option>
+            <option value="mystery">Mystery & Thriller</option>
+            <option value="adventure">Adventure & Action</option>
+            <option value="fantasy">Fantasy & Magic</option>
+        </select>
+        
+        <br><br>
+        
+        <label>Book Format Preference</label>
+        <br>
+        <label>
+            <input type="radio" name="format" value="paperback">Paperback
+        </label>
+        <label>
+            <input type="radio" name="format" value="hardcover">Hardcover
+        </label>
+        <label>
+            <input type="radio" name="format" value="graphic">Graphic Novel
+        </label>
+        <label>
+            <input type="radio" name="format" value="other">Other
+        </label>
+        
+        <br><br>
+        
+        <label for="notes">Any specific book titles you want us to bring?</label><br>
+        <textarea name="notes" id="notes" rows="5" cols="60"></textarea>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Preferred day to visit</legend>
+        <label>
+            <input type="checkbox" name="day" value="mon">Monday
+        </label>
+        <label>
+            <input type="checkbox" name="day" value="tue">Tuesday
+        </label>
+        <label>
+            <input type="checkbox" name="day" value="sat">Saturday
+        </label>
+        <label>
+            <input type="checkbox" name="day" value="sun">Sunday
+        </label>
+      </fieldset>
+      
+      <br>
+      <input type="submit" value="Register for Book Fair">
+    </form>
+</body>
+</html>
