@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MODULE 2 - LESSON 1 - ACTIVITY 1 - My Colour Card</title>
+    <style>
+
+        #my-card {
+            background-color: rgb(10, 117, 194);
+            color:khaki;
+            text-align:center;
+        }
+        /* UNIVERSAL SELECTOR */
+        *{
+            font-size: 15px;
+        }
+      body {
+        background-color: cadetblue;
+      }
+      h1 {
+        color: darkblue;
+        font-style: italic;
+        font-size: 50px;
+      }
+      p {
+        color:rgb(49, 13, 121);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .text-color-purple {
+        color:aquamarine
+      }
+      .ayansh {
+        color: deepskyblue;
+      }
+      .bold {
+        font-weight: bold;
+      }
+      .freaky {
+        transform: translateX(100px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Colour Card</h1>
+
+    <!-- Inline CSS: Add style="color: ____;" inside this p tag -->
+    <p style="color: rgb(143, 19, 19)">Hi! This is my very own webpage.</p>
+
+    <div id="my-card">
+      <h2>About Me</h2>
+      <p class="text-color-purple freaky">My name is Sam.</p>
+      <p class="text-color-purple">My favourite colour is red.</p>
+      <p class="text-color-purple">My favourite subject is Maths.</p>
+      <p class="text-color-purple">My favourite food is pasta.</p>
+    </div>
+
+    <h2>My Favourite Things</h2>
+    <p class="ayansh bold">My favourite animal is a cat.</p>
+    <p class="ayansh bold">My favourite sport is cricket.</p>
+    <p class="ayansh bold">My favourite movie is The Lion King.</p>
+  </body>
+</html>
