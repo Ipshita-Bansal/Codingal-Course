@@ -1,0 +1,47 @@
+body {
+    background-color:darkblue;
+    background:linear-gradient(45deg, darkblue, rgb(80, 6, 140));
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.page-header {
+    color: aliceblue;
+    text-align: center;
+    background: linear-gradient(rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    padding: 10px;
+    border-radius: 10px;
+}
+.fact-card{
+    background-color: rgba(0, 0, 0, 0.352);
+    color:aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+}
+.fact-card h2{
+color:aquamarine;
+}
+.star{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(231, 216, 6);
+    border-radius: 50%;
+    animation: twinkle 2s infinite alternate;
+}
+@keyframes twinkle{
+    0%{
+        background-color: gold;
+        transform:rotate(0)
+    }
+    50%{
+        background-color: chocolate;
+        transform:rotate(360deg)
+    }
+    100%{
+        background-color: white;
+        transform:rotate(0)
+    }
+   
+}
