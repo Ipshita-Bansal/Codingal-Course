@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MODULE 2 - LESSON 1 - ACTIVITY 1 - George Russell Card</title>
+    <style>
+        #my-card {
+            background-color: rgb(15, 23, 42);
+            color: rgb(0, 210, 190);
+            text-align: center;
+            padding: 20px;
+            margin: 20px auto;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 210, 190, 0.2);
+        }
+        *{
+            font-size: 15px;
+        }
+      body {
+        background-color: rgb(10, 15, 25);
+        text-align: center;
+      }
+      h1 {
+        color: rgb(0, 210, 190);
+        font-style: italic;
+        font-size: 50px;
+        margin-bottom: 5px;
+      }
+      h2 {
+        color: rgb(255, 255, 255);
+      }
+      p {
+        color: rgb(200, 200, 200);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .text-color-purple {
+        color: rgb(56, 189, 248);
+      }
+      .ayansh {
+        color: rgb(0, 210, 190);
+      }
+      .bold {
+        font-weight: bold;
+      }
+      .freaky {
+        transform: translateX(0px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>George Russell</h1>
+
+    <!-- Inline CSS: Add style="color: ____;" inside this p tag -->
+    <p style="color: rgb(0, 210, 190)">Hi! This is my page about GR63.</p>
+
+    <div id="my-card">
+      <h2>About Driver</h2>
+      <p class="text-color-purple freaky">My name is George Russell.</p>
+      <p class="text-color-purple">My team is Mercedes.</p>
+      <p class="text-color-purple">My car number is 63.</p>
+      <p class="text-color-purple">My nationality is British.</p>
+    </div>
+
+    <h2>My Favourite Things</h2>
+    <p class="ayansh bold">My favourite track is Silverstone.</p>
+    <p class="ayansh bold">My favourite sport is Formula 1.</p>
+    <p class="ayansh bold">My favourite role is F1 Driver.</p>
+  </body>
+</html>
