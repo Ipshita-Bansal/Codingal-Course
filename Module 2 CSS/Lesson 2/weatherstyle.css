@@ -1,0 +1,63 @@
+body {
+    background-color: darkblue;
+    background: linear-gradient(45deg, rgb(15, 23, 42), rgb(51, 65, 85));
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+.page-header {
+    color: aliceblue;
+    text-align: center;
+    background: linear-gradient(rgba(30, 41, 59, 1) 0%, rgba(71, 85, 105, 1) 35%, rgba(148, 163, 184, 1) 100%);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.fact-card {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.fact-card h2 {
+    color: rgb(56, 189, 248);
+}
+
+.star {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(56, 189, 248);
+    border-radius: 50%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: twinkle 1.5s infinite alternate;
+}
+
+.footer-text {
+    color: aliceblue;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+@keyframes twinkle {
+    0% {
+        background-color: rgb(37, 99, 235);
+        transform: translateY(0px);
+    }
+    50% {
+        background-color: rgb(14, 165, 233);
+        transform: translateY(-8px);
+    }
+    100% {
+        background-color: rgb(2, 132, 199);
+        transform: translateY(0px);
+    }
+}
