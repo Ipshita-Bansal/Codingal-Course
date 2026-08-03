@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starlight Bites Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <style>
+      /* Typography — font, size, weight, colour for the whole page */
+      body {
+        background-color: rgb(35, 15, 50);
+        color: rgba(240, 220, 255, 0.9);
+        font-family: "Abril Fatface", serif;
+      }
+
+      /* Typography + Text Shadow — big bold cafe title with a different neon look */
+      .hero-name {
+        font-size: 55px;
+        font-weight: 400;
+        color: rgb(255, 105, 180);
+        text-shadow: 0 0 10px rgb(255, 105, 180), 0 0 20px rgb(147, 112, 219);
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+      }
+      .hero-name:hover {
+        letter-spacing: 5px;
+        color: rgb(0, 255, 255);
+        text-shadow: 0 0 15px rgb(0, 255, 255);
+      }
+
+      /* Typography + Text Transform — tagline becomes Title Case and centered */
+      .tagline {
+        font-style: italic;
+        color: rgb(255, 215, 0);
+        text-transform: capitalize;
+        text-align: center;
+      }
+
+      /* Text Transform + Text Decoration — section headings in CAPS with underline */
+      .label {
+        text-transform: uppercase;
+        text-decoration: underline wavy;
+        color: rgb(0, 255, 255);
+        transition: all 0.3s ease;
+      }
+      .label:hover {
+        letter-spacing: 2px;
+        color: rgb(255, 105, 180);
+      }
+
+      /* Typography — menu item names stand out with hover animation */
+      .power {
+        color: rgb(255, 165, 0);
+        font-size: 25px;
+        transition: all 0.3s ease;
+      }
+      .power:hover {
+        transform: scale(1.05) translateX(10px);
+        color: rgb(0, 255, 127);
+      }
+
+      /* Text Decoration — item descriptions formatted like weaknesses */
+      .weakness {
+        color: rgb(216, 191, 216);
+        font-size: 17px;
+        font-style: italic;
+      }
+
+      /* Transform — the badge adapted for the weekend special banner */
+      .badge {
+        color: rgb(35, 15, 50);
+        background-color: rgb(0, 255, 127);
+        font-size: 24px;
+        font-weight: bold;
+        padding: 12px;
+        transform: rotate(-2deg);
+        display: block;
+        text-align: center;
+        margin: 30px 0;
+        transition: all 1s ease-in;
+      }
+      .badge:hover {
+        letter-spacing: 4px;
+        transform: rotate(2deg);
+      }
+
+      /* Typography — footer text */
+      .made-by {
+        color: rgb(255, 105, 180);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="hero-name">Starlight Bites</h1>
+    <p class="tagline">Late night cravings sorted!</p>
+
+    <h2 class="label">Appetizers</h2>
+    <p class="power">Loaded Cheese Fries</p>
+    <p class="weakness">Golden fries drowned in warm melted cheddar and spicy jalapeños.</p>
+    <p class="power">Crispy Chicken Pops</p>
+    <p class="weakness">Bite-sized fried chicken chunks served with our secret fiery sauce.</p>
+
+    <h2 class="label">Main Meals</h2>
+    <p class="power">Ultimate Burger</p>
+    <p class="weakness">Double patty stacked with lettuce, tomatoes, and smoky barbecue spread.</p>
+    <p class="power">Loaded Veggie Wrap</p>
+    <p class="weakness">Grilled paneer, fresh veggies, and mint mayo wrapped in a soft tortilla.</p>
+
+    <div class="badge">MIDNIGHT MADNESS: 25% OFF!</div>
+
+    <p class="made-by">Created by Ipshita Bansal</p>
+  </body>
+</html>
