@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>My Study Progress Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: #fff8f0;
+      }
+      p {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row p-4 text-center bg-dark text-white">
+            <h1>🚀 My Study Progress Dashboard 📚</h1>
+            <p class="text-warning">Welcome to my dashboard, lets see how much progress i made...</p>
+
+            <div class="d-flex gap-2 justify-content-center mt-3">
+                <button class="btn btn-warning" data-bs-toggle="tooltip" data-bs-title="Algebra and Calculus">Math</button>
+                <button class="btn btn-success" data-bs-toggle="tooltip" data-bs-title="Cells and Ecosystems">Science</button>
+                <button class="btn btn-info" data-bs-toggle="tooltip" data-bs-title="Grammar and Literature">English</button>
+                <button class="btn btn-danger" data-bs-toggle="tooltip" data-bs-title="HTML and JavaScript">Coding</button>
+            </div>
+        </div>
+     </div>
+
+    <div class="container p-3">
+      <h2 class="section-title text-dark">
+        Lessons Completed 
+        <span class="badge bg-success">4</span>
+      </h2>
+      <p>Math <Span class="badge bg-warning text-dark">80% Completed</Span></p>
+      <p>Science <Span class="badge bg-success">65% Completed</Span></p>
+      <p>English <Span class="badge bg-info text-dark">55% Completed</Span></p>
+      <p>Coding <Span class="badge bg-danger">70% Completed</Span> </p>
+
+      <h2 class="section-title text-dark mt-4">Subject Progress</h2>
+      <p>Math</p>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-warning text-dark progress-bar-striped progress-bar-animated" style="width:80%">80% Completed</div>
+      </div>
+      <p>Science</p>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:65%">65% Completed</div>
+      </div>
+      <p>English</p>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-info text-dark progress-bar-striped progress-bar-animated" style="width:55%">55% Completed</div>
+      </div>
+      <p>Coding</p>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:70%">70% Completed</div>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ 
+<script>
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+</body>
+</html>
