@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Magic Word Lab</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <style>
+        body {background: lightblue}
+        h1, h3 {color: darkcyan}
+        .box {background:whitesmoke, color: darkkhaki}
+    </style>
+    
+    </head>
+<body>
+   <div class="container py-4">
+    <h1 class="mb-1">My Magic Word Lab</h1>
+    <p class="text-muted mb-4">Discover types, switch them, find and swap words, and catch sneaky errors!</p>
+    <!-- TOPIC 1: typeof -->
+     <div class="card mb-4">
+        <div class="card-body">
+            <h3 class="card-title">What Type Is It?</h3>
+            <button class="btn btn-warning" onclick="checkType()">Reveal the Types!</button>
+            <div id="typeResult" class="box p-3 mt-3 rounded">Press the button to reveal the Secret Types!</div>
+        </div>
+     </div>
+     <!-- TOPIC 2: string() and number() -->
+      <div class="card mb-4">
+        <div class="card-body">
+            <h3 class="card-title">Switch the Type</h3>
+            <input id="numIn" class="form-control mb-2" placeholder="Type any number here (Try: 42)">
+            <button class="btn btn-warning mr-2" onclick="toStr()">Turn into Text</button>
+            <button class="btn btn-warning" onclick="toNum()">Turn into Number</button>
+            <div id="convResult" class="box p-3 mt-3 rounded">Type a number above and then press the button!</div>
+        </div>
+      </div>
+      <!-- TOPIC 3: search() and replace() -->
+     <div class="card mb-4">
+        <div class="card-body">
+            <h3 class="card-title">Find and Swap a Word</h3>
+            <input id="divIn" class="forn-control mb-2">
+   </div>
+</body>
+</html>
